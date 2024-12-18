@@ -1,0 +1,98 @@
+/* General reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body as a flex container with a column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+}
+
+/* Main container: flex container with a row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Automatically adjusts the size of the main container */
+}
+
+/* Header and footer styling (optional for clarity) */
+header {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #444;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #007BFF; /* Highlight color on hover */
+}
+
+.logo {
+    font-size: 40px;
+    margin-right: 10px;
+    font-weight: bold; 
+    color: #2871cf; /* Tomato color */
+}
+
+/* Article styling: Takes 2/3 of the width */
+article {
+    flex: 2; /* Uses 2 parts of the available space */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e7f3ff; /* Light blue for visibility */
+}
+
+/* Aside styling: Takes 1/3 of the width */
+aside {
+    flex: 1; /* Uses 1 part of the available space */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light grey for visibility */
+}
+/* Styling the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+/* Adding some padding and styling the logo */
+
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding-left: 10px; /* Add padding for better alignment */
+    }
+
+    footer {
+        text-align: center; /* Center footer text for smaller screens */
+    }
+}
