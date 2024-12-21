@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header container */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: transparent; /* Matches banner background */
+}
+
+/* Logo styling */
+header img {
+  width: 50px; /* Adjust size of the logo */
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Space between navigation links */
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff; /* White text */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #ff69b4; /* Pink hover effect */
+}
+
+/* Banner section */
+section {
+  position: relative;
+  background-image: url('./images/banner.jpg'); /* Replace with actual image */
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* White text for all elements */
+}
+
+/* Overlay effect */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+/* Main title */
+section h1 {
+  position: relative;
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+/* Subtitles (SMILES, GRIN, LAUGH) */
+section span {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 10px; /* Space between words */
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Light overlay for visibility */
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/* Button styling */
+section button {
+  position: relative;
+  background-color: #ff69b4; /* Pink button */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+section button:hover {
+  background-color: #ff4786; /* Slightly darker pink on hover */
+}
