@@ -36,5 +36,5 @@ This project is open source and available under the MIT License.
 
 ## Author
 Created by **Philip Olua**, a passionate video creator and graduate of Electrical/Electronics Engineering with expertise in telecommunications and web development. 
-- **GitHub**: [Your GitHub Profile](https://github.com/Phils9)
-- **Email**: [Your Email Address](philip.thirdangle@gmail.com)
+- **GitHub**: [Phils9](https://github.com/Phils9)
+- **Email**: [Philip](philip.thirdangle@gmail.com)
