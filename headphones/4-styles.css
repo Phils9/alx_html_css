@@ -1,0 +1,495 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.banner {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+}
+
+.navbar .logo img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.after p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px;
+  margin-top: 10px;
+  padding: 50px 340px;
+}
+
+.cta {
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 30px;
+  height: 44px;
+  width: 162px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.cta:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.Wwd-p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 300px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.service {
+  text-align: center;
+  padding: 50px 15px;
+  width: 207px;
+}
+
+.service i {
+  font-size: 90px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.service h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.holberton_school-icon-ic_music {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_sound {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_hearing {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_video {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+/* Our Results Section */
+.results {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1;
+}
+
+.Wwd {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 340px;
+  margin-bottom: -100px;
+  margin-top: -100px;
+}
+
+.results h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 100px 50px;
+  margin-bottom: -60px;
+}
+
+/* Container for pentagons */
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap; /* For responsiveness */
+  padding: 120px 50px;
+}
+
+/* Pentagon shape */
+.pentagon {
+  position: relative;
+  width: 180.7px; /* Adjust size as needed */
+  height: 171.86px;
+  background: rgba(255, 101, 101, 1); /* Pentagon background color */
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Numerical result in the pentagon */
+.result {
+  font-size: 40px; /* Adjust size of the result text */
+  font-weight: bold;
+}
+
+/* Write-up beneath the result */
+.pentagon p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  margin: 0;
+}
+
+/* General styles for the section */
+.contact-form {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: rgba(7, 22, 41, 1);
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 335px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 1rem;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 4px;
+}
+
+/* Input and textarea fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #333; /* Thick bottom border */
+  font-size: 1rem;
+  padding: 5px 2px;
+  outline: none;
+  transition: border-color 0.3s;
+  background: transparent; /* Transparent background */
+}
+
+/* Focus state for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-bottom: 2px solid #FF6565; /* Change color on focus */
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Submit button */
+.submit-btn {
+  display: inline-block;
+  background-color: rgba(255, 101, 101, 1); /* Button color */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 44px;
+  width: 162px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 22px;
+  margin-top: 40px;
+}
+
+.submit-btn:hover {
+  opacity: 0.9; /* Slightly darker on hover */
+}
+
+/* General footer styles */
+.footer {
+  background-color: rgba(7, 22, 41, 1); /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align everything */
+  height: 200px;
+}
+
+/* Footer content (logo and social icons) */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Spread out logo and icons */
+  width: 100%;
+  max-width: 1000px; /* Optional: Restrict width */
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+/* Logo styles */
+.footer-logo img {
+  max-height: 32px; /* Restrict logo size */
+  display: block;
+  width: 161px;
+  height: 32px;
+}
+
+/* Social media icons */
+.footer-social {
+  display: flex;
+  gap: 15px; /* Spacing between icons */
+}
+
+.social-icon {
+  color: #fff; /* White icons */
+  font-size: 1.5rem; /* Adjust size */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+  color: #FF6565; /* Change icon color on hover */
+}
+
+/* Copyright section */
+.footer-copyright {
+  text-align: center;
+  position: absolute; /* Place copyright text at the bottom */
+  bottom: 5px; /* Very close to the bottom margin */
+  font-size: 12px; /* Slightly smaller text */
+  color: #ffffff; /* Light gray text for subtlety */
+  opacity: 0.6;
+  width: 100%;
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    gap: 20px; /* Add spacing between logo and icons */
+  }
+
+  .footer-social {
+    justify-content: center; /* Center icons */
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem; /* Slightly smaller on mobile */
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 30px 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%; /* Full-width button on small screens */
+  }
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pentagon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pentagon .result {
+    font-size: 1.2rem;
+  }
+
+  .pentagon p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .what-we-do {
+    padding: 20px;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.5rem; /* Adjust the title size */
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column; /* Stack the services vertically */
+    gap: 20px; /* Add spacing between the stacked services */
+  }
+
+  .service {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .service h3 {
+    font-size: 1.2rem; /* Adjust the heading size */
+  }
+
+  .service p {
+    font-size: 1rem; /* Adjust the paragraph size */
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service i {
+    font-size: 36px; /* Reduce size for smaller screens */
+  }
+}

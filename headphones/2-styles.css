@@ -1,0 +1,320 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.banner {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.hero-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+}
+
+.navbar .logo img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.after p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px;
+  margin-top: 10px;
+  padding: 50px 340px;
+}
+
+.cta {
+  background-color: #FF6565;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 30px;
+  height: 42px;
+  width: 162px;
+  font-size: 14px;
+  border-radius: 21px;
+}
+
+.cta:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.Wwd-p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 300px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.service {
+  text-align: center;
+  padding: 50px 15px;
+  width: 207px;
+}
+
+.service i {
+  font-size: 90px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.service h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.holberton_school-icon-ic_music {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_sound {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_hearing {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_video {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+/* Our Results Section */
+.results {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1;
+}
+
+.Wwd {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 340px;
+  margin-bottom: -100px;
+  margin-top: -100px;
+}
+
+.results h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 100px 50px;
+  margin-bottom: -100px;
+}
+
+/* Container for pentagons */
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+  flex-wrap: wrap; /* For responsiveness */
+  padding: 100px 50px;
+}
+
+/* Pentagon shape */
+.pentagon {
+  position: relative;
+  width: 180.7px; /* Adjust size as needed */
+  height: 171.86px;
+  background: rgba(255, 101, 101, 1); /* Pentagon background color */
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Numerical result in the pentagon */
+.result {
+  font-size: 40px; /* Adjust size of the result text */
+  font-weight: bold;
+}
+
+/* Write-up beneath the result */
+.pentagon p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pentagon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pentagon .result {
+    font-size: 1.2rem;
+  }
+
+  .pentagon p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .what-we-do {
+    padding: 20px;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.5rem; /* Adjust the title size */
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column; /* Stack the services vertically */
+    gap: 20px; /* Add spacing between the stacked services */
+  }
+
+  .service {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .service h3 {
+    font-size: 1.2rem; /* Adjust the heading size */
+  }
+
+  .service p {
+    font-size: 1rem; /* Adjust the paragraph size */
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service i {
+    font-size: 36px; /* Reduce size for smaller screens */
+  }
+}

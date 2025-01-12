@@ -101,11 +101,13 @@ body {
   color: #fff;
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
   transition: opacity 0.3s;
   margin-top: 30px;
+  height: 42px;
+  width: 162px;
+  font-size: 14px;
+  border-radius: 21px;
 }
 
 .cta:hover {
@@ -131,3 +133,105 @@ body {
       margin: 10px 0;
   }
 }
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.Wwd-p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 300px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.service {
+  text-align: center;
+  padding: 50px 15px;
+  width: 207px;
+}
+
+.service i {
+  font-size: 90px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.service h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.holberton_school-icon-ic_music {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_sound {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_hearing {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+.holberton_school-icon-ic_video {
+  color: rgba(255, 101, 101, 1); /* Example: Light Blue */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .what-we-do {
+    padding: 20px;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.5rem; /* Adjust the title size */
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column; /* Stack the services vertically */
+    gap: 20px; /* Add spacing between the stacked services */
+  }
+
+  .service {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .service h3 {
+    font-size: 1.2rem; /* Adjust the heading size */
+  }
+
+  .service p {
+    font-size: 1rem; /* Adjust the paragraph size */
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service i {
+    font-size: 36px; /* Reduce size for smaller screens */
+  }
+}
+
+
